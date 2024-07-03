@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Graham's Insights</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-gray-100">
+    <nav class="bg-gray-900 bg-opacity-75 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-white">Paul Graham's Insights</a>
+            <div class="space-x-4">
+                <a href="index.html" class="hover:text-yellow-300 text-white">Home</a>
+                <a href="articles.html" class="hover:text-yellow-300 text-white">Articles</a>
+                <a href="credits.html" class="hover:text-yellow-300 text-white">Credits</a>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-gray-900 bg-opacity-75 py-20 text-center shadow-md">
+        <h1 class="text-5xl font-bold text-white">Welcome to Paul Graham's Insights</h1>
+        <p class="text-xl mt-4 text-gray-300">Discover the profound essays and articles by Paul Graham</p>
+    </header>
+    <main class="p-6 max-w-screen-xl mx-auto min-h-screen">
+        <section class="my-8 flex flex-col items-center text-center md:flex-row md:text-left">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold text-gray-100">Our Mission</h2>
+                <p class="mt-4 text-gray-200">Our mission is to share the insightful essays and articles of Paul Graham with the world, providing inspiration and guidance to entrepreneurs and tech enthusiasts.</p>
+            </div>
+            <div class="md:w-1/2 mt-6 md:mt-0 md:pl-6">
+                <img src="images/website_mission.png" alt="Our Mission" class="rounded-lg shadow-lg mx-auto">
+            </div>
+        </section>
+        <section class="my-8">
+            <h2 class="text-3xl font-bold text-center text-gray-100">Featured Essays</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8" id="featured-articles">
+                <!-- Featured articles will be dynamically loaded here -->
+            </div>
+        </section>
+        <section class="my-8">
+            <h2 class="text-3xl font-bold text-center text-gray-100">All Essays</h2>
+            <div class="scroll-container flex space-x-4 overflow-x-auto mt-8" id="scroll-container">
+                <!-- All articles will be dynamically loaded here -->
+            </div>
+        </section>
+        <section class="my-8 flex flex-col items-center text-center md:flex-row md:text-left">
+            <div class="md:w-1/2 mt-6 md:mt-0 md:pr-6 order-last md:order-first">
+                <img src="images/website_values.png" alt="Our Values" class="rounded-lg shadow-lg mx-auto">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold text-gray-100">Our Values</h2>
+                <p class="mt-4 text-gray-200">We believe in the power of knowledge, the importance of sharing ideas, and the value of hard work. Our goal is to provide a platform where Paul Graham's wisdom can inspire and guide future innovators.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-900 bg-opacity-75 py-10 text-center shadow-md">
+        <div class="container mx-auto">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="index.html" class="hover:text-yellow-300 text-white">Home</a>
+                <a href="articles.html" class="hover:text-yellow-300 text-white">Articles</a>
+                <a href="credits.html" class="hover:text-yellow-300 text-white">Credits</a>
+            </div>
+            <p class="text-white">&copy; 2024 by Paul Graham. All rights reserved. Design by <strong>Ayush Sharma</strong>.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

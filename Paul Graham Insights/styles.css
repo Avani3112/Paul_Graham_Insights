@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #4a5568;
+    border-radius: 5px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #2d3748;
+}
+
+.article {
+    background: #ffffff;
+    min-width: 300px;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: scale(0.95);
+    transition: transform 0.3s ease-in-out;
+}
+
+.article:hover {
+    transform: scale(1);
+}
+
+.article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.article img:hover {
+    transform: scale(1.1);
+}
+
+.article-content {
+    padding: 1rem;
+}
+
+.article h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.article p {
+    flex: 1;
+    color: #555;
+}
+
+.article a {
+    color: #1a202c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.article a:hover {
+    color: #3182ce;
+}
+
+@media (min-width: 768px) {
+    .scroll-container {
+        gap: 2rem;
+    }
+
+    .article img {
+        height: 250px;
+    }
+
+    section.my-8 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
